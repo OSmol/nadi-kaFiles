@@ -1,4 +1,5 @@
-package by.trjava.library.dal.bookDao.bookDaoJson;
+package by.trjava.library.dal.bookDao.bookDaoJson;// 333 раза говорилось, что большие буквы не используем в именовании пакетов
+// где были уши в эти моменты?
 
 import by.trjava.library.dal.bookDao.BookDao;
 import by.trjava.library.dal.exeptionDao.DAOException;
@@ -12,7 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class BookDaoJson implements BookDao {
-    private File file;
+    private File file;// так же рассказывала, что не нужны вам поля экземплара класса в реализациях дао и мервисов
+    // и даже объясняла почему
 
     public BookDaoJson(String baseFile) {
         file = new File(baseFile);
