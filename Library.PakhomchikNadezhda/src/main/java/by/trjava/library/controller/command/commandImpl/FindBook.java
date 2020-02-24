@@ -18,7 +18,8 @@ public class FindBook implements Command {
 
         ServiceFactory factory = ServiceFactoryImpl.getInstance();
         BookService bookService = factory.getBookService();
-        if (request.contains("author")) {
+        if (request.contains("author")) {// короче, учи паттерны проектирования
+            // а от таких цепочек нужно избавляться
             parameterToSearch = Parser.getParameterValue(request, "author");
             try {
                 List<Book> books = bookService.findBookByAuthor(parameterToSearch);
