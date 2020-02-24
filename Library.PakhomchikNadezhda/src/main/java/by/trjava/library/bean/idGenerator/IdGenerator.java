@@ -2,6 +2,7 @@ package by.trjava.library.bean.idGenerator;
 
 import java.util.UUID;
 
+// генерация ID - это возможность логики
 public class IdGenerator {
     private String id;
     private static IdGenerator instance = new IdGenerator();
